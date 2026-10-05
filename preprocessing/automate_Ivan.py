@@ -64,7 +64,7 @@ def preprocess_online_retail(raw_path, churn_threshold=90, test_size=0.2, random
 
 
 if __name__ == "__main__":
-    X_train, X_test, y_train, y_test = preprocess_online_retail('online_retail_raw/Online Retail.xlsx')
+    X_train, X_test, y_train, y_test = preprocess_online_retail('../online_retail_raw/Online Retail.xlsx')
 
     import os
     os.makedirs('online_retail_preprocessing', exist_ok=True)
